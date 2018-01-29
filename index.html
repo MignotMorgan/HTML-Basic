@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Les bases de l'html</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" media="all">
 </head>
 
 <body>
@@ -124,27 +126,29 @@
   </section>
   <li><h2>Le markdown et l'HTML</h2></li>
   <section>
-    Bien que le Markdown et l'Html peuvent tous les deux servir à du formatage de texte, les html sert à la création et à la mise en forme de page web. Ce-dernier est donc bien plus complexe que le Markdown. <br/>
-    Le Markdown ce veut plus facile à écrire et à lire que l'Html, contrairement à ce dernier, il n'utilise pas de balises, et sa rédaction est beaucoup plus intuitive.<br/>
+    <p>
+      Bien que le Markdown et l'Html peuvent tous les deux servir à du formatage de texte, les html sert à la création et à la mise en forme de page web. Ce-dernier est donc bien plus complexe que le Markdown. <br/>
+      Le Markdown ce veut plus facile à écrire et à lire que l'Html, contrairement à ce dernier, il n'utilise pas de balises, et sa rédaction est beaucoup plus intuitive.<br/>
+</p>
     <blockquote>
       <h4>Insérer une image</h4>
         <h5>Markdown</h5>
-        <xmp>![Google logo](https://www.google.fr/images/srpr/logo11w.png "google logo")</xmp>
+        <code>![Google logo](https://www.google.fr/images/srpr/logo11w.png "google logo")</code>
         <h5>Html</h5>
-        <xmp><img src = "https://www.google.fr/images/srpr/logo11w.png" title = "google logo" alt = "Google logo"></xmp>
+        <code>&lt;img src = "https://www.google.fr/images/srpr/logo11w.png" title = "google logo" alt = "Google logo"&gt;</code>
 
       <h4>Insérer une citation</h4>
         <h5>Markdown</h5>
-        <xmp> > Ceci est une citation!</xmp>
+        <code> > Ceci est une citation!</code>
         <h5>Html</h5>
-        <xmp><blockquote>Ceci est une citation!</blockquote></xmp>
+        <code>&lt;blockquote&gt;Ceci est une citation!&lt;/blockquote&gt;</code>
 
 
         <h4>Insérer une video youtube</h4>
           <h5>Markdown</h5>
-          <xmp>[![Video](http://img.youtube.com/vi/6A5EpqqDOdk/0.jpg)](http://www.youtube.com/watch?v=6A5EpqqDOdk)</xmp>
+          <code>[![Video](http://img.youtube.com/vi/6A5EpqqDOdk/0.jpg)](http://www.youtube.com/watch?v=6A5EpqqDOdk)</code>
           <h5>Html</h5>
-          <xmp><iframe width="560" height="315" src="http://www.youtube.com/embed/6A5EpqqDOdk?rel=0" frameborder="0" allowfullscreen></iframe></xmp>
+          <code>&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/6A5EpqqDOdk?rel=0" frameborder="0" allowfullscreen&gt;</iframe></code>
     </blockquote>
   </section>
 </ul>

@@ -1,0 +1,38 @@
+body
+{
+background: #517DFF;
+  background-image: url(http://www.wallpapers-mania.org/images/Deco/fond-page-web-rouge-fonce.jpg);
+  margin:0;
+  padding:0;
+  height:100vh;
+  display:flex;
+
+}
+
+section
+{
+  margin: auto;
+  color:white;
+}
+
+
+
+
+/* The animation code */
+@keyframes example
+{
+    from
+    {
+      background-color: red;
+    }
+    to
+    {
+      background-color: yellow;
+    }
+}
+a input
+{
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}

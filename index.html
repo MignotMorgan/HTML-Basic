@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Les bases de l'html</title>
+</head>
+
+<body>
+<h1> Les bases de l'html</h1>
+<br />
+<ul>
+  <li><h2>Les balises</h2></li>
+  <ul>
+    <li><h3>Les balises paires</h3></li>
+      <section>
+        <p>
+          Le html est basé sur le langage Xml, il s'écrit donc à l'aide de balises. Une balise est simplement un nom compris entre le symbole <strong> "&lsaquo;" </strong> et le symbole <strong> "&rsaquo;" </strong>. Par exemple <strong> &lsaquo;mabalise&rsaquo; </strong> est une balise. <br/>
+          En Xml, toutes les balises fonctionnent par paires, la première balise est une balise ouvrante, tandis que la seconde est une balise fermante. Nous verrons plus tard que le Html permet quelques<strong> <a href="#orpheline"> exceptions </a> </strong><br />
+          Une balise fermante doit avoir le même nom que la balise ouvrante correspondante. De plus celle-ci doit contenir une barre oblique avant le nom de la balise.<br/>
+          Tous ce qui est contenu entre les deux balises est appelées "élément" de la balise.
+          Ainsi, si &lsaquo;p&rsaquo; est une balise ouvrante, &lsaquo;/p&rsaquo; sera la balise fermante correspondante.<br />
+        </p>
+        <blockquote>
+          <h4>Voici 5 exemples de balises paires :</h4>
+          <table border="1">
+            <tr>
+              <th>ouvrante</td>
+              <th>fermante</td>
+            </tr>
+            <tr>
+              <td>&lsaquo;h1&rsaquo;</td>
+              <td>&lsaquo;/h1&rsaquo;</td>
+            </tr>
+            <tr>
+              <td>&lsaquo;div&rsaquo;</td>
+              <td>&lsaquo;/div&rsaquo;</td>
+            </tr>
+            <tr>
+              <td>&lsaquo;a&rsaquo;</td>
+              <td>&lsaquo;/a&rsaquo;</td>
+            </tr>
+            <tr>
+              <td>&lsaquo;ul&rsaquo;</td>
+              <td>&lsaquo;/ul&rsaquo;</td>
+            </tr>
+            <tr>
+              <td>&lsaquo;body&rsaquo;</td>
+              <td>&lsaquo;/body&rsaquo;</td>
+            </tr>
+          </table>
+        </blockquote>
+        <footer>
+          <a href="https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML">Balises</a>
+        </footer>
+      </section>
+    <li><h3 id="orpheline">Les balises orphelines</h3></li>
+      <section>
+      <p>
+        Comme nous l'avons vu précédement, le Html permet quelques exceptions concernant les balises ouvrantes et les balises fermantes.<br/>
+        Certaines balises n'ont pas de balises fermantes correspondantes. La raison est simple, leur utilité n'implique pas qu'elles doivent contenir un élément. <br/>
+        <strong>Ces balises sont aussi appelées balise auto-fermante ou balise vide.</strong> <br />
+      </p>
+      <blockquote>
+        <h4>Voici 3 exemples de balises auo-fermantes :</h4>
+        <table border="1">
+          <tr>
+            <th>auto-fermante</th>
+          </tr>
+          <tr>
+            <td>&lsaquo;img /&rsaquo;</td>
+          </tr>
+          <tr>
+            <td>&lsaquo;br /&rsaquo;</td>
+          </tr>
+          <tr>
+            <td>&lsaquo;link /&rsaquo;</td>
+          </tr>
+        </table>
+      </blockquote>
+      <footer>
+        <a href="https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML">Balises</a>
+      </footer>
+    </section>
+  </ul>
+  <li><h2>Les attributs</h2></li>
+  <section>
+    <p>
+      Chaques balises Html peut contenir des attributs, ceux-ci permettent de configurer l'élément de la balises et de changer le comportement par défaut de celle-ci.<br/>
+      En Html bon nombre de balise représente un contrôle visuel qui apparait dans le navigateur. Les attributs de ces contrôle peuvent changer la représentation de ce contrôle ou lui donner un comportement particulier.<br/>
+      Les attributs peuvent aussi faire références aux différents évènements qui sont liés à un contrôle. <strong><font color="red">Ils peuvent ainsi facilement adjoindre une fonction à un évènement.</font></strong>
+    </p>
+    <footer>
+      <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Attributs">Attributs</a>
+    </footer>
+  </section>
+  <li><h2>La différence entre inline et block</h2></li>
+  <section>
+    <p>
+      Une page web peut-être comparée à un <strong>ensemble d'éléments qui se comportent comme des boîtes.</strong><br />
+      En Html, la plupart des éléments visuel peuvent appartenir à la catégorie "Inline" ou à la catégorie "Block".<br/>
+      Lorsqu'un élément est de type "Block", il crée automatiquement un retour à la ligne. De plus, cette élément possède des dimensions de hauteur et de largeur.<br/>
+      Par contre, un élément de type "Inline" ne crée pas de retour à la ligne, il affiche son contenu sur une même ligne. Ces éléments doivent être contenu dans un balise block, car celles-ci contrairement aux balises "Inline" possèdent pas de valeur de taille ou de position su la page.<br/>
+    </p>
+    <blockquote>
+      <ul>
+        <li><h4>Exemples de balises inline</h4></li>
+        <ul>
+          <li>&lsaquo;a&rsaquo; &lsaquo;/a&rsaquo;</li>
+          <li>&lsaquo;strong&rsaquo; &lsaquo;/strong&rsaquo;</li>
+          <li>&lsaquo;mark&rsaquo; &lsaquo;/mark&rsaquo;</li>
+        </ul>
+          <li><h4>Exemples balises block</h4></li>
+          <ul>
+            <li>&lsaquo;p&rsaquo; &lsaquo;/p&rsaquo;</li>
+            <li>&lsaquo;footer&rsaquo; &lsaquo;/footer&rsaquo;</li>
+            <li>&lsaquo;article&rsaquo; &lsaquo;/article&rsaquo;</li>
+          </ul>
+      </ul>
+
+    </blockquote>
+    <footer>
+      <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/le-modele-des-boites">Inline et Block</a>
+    </footer>
+  </section>
+  <li><h2>Le markdown et l'HTML</h2></li>
+  <section>
+    Bien que le Markdown et l'Html peuvent tous les deux servir à du formatage de texte, les html sert à la création et à la mise en forme de page web. Ce-dernier est donc bien plus complexe que le Markdown. <br/>
+    Le Markdown ce veut plus facile à écrire et à lire que l'Html, contrairement à ce dernier, il n'utilise pas de balises, et sa rédaction est beaucoup plus intuitive.<br/>
+    <blockquote>
+      <h4>Insérer une image</h4>
+        <h5>Markdown</h5>
+        <xmp>![Google logo](https://www.google.fr/images/srpr/logo11w.png "google logo")</xmp>
+        <h5>Html</h5>
+        <xmp><img src = "https://www.google.fr/images/srpr/logo11w.png" title = "google logo" alt = "Google logo"></xmp>
+
+      <h4>Insérer une citation</h4>
+        <h5>Markdown</h5>
+        <xmp> > Ceci est une citation!</xmp>
+        <h5>Html</h5>
+        <xmp><blockquote>Ceci est une citation!</blockquote></xmp>
+
+
+        <h4>Insérer une video youtube</h4>
+          <h5>Markdown</h5>
+          <xmp>[![Video](http://img.youtube.com/vi/6A5EpqqDOdk/0.jpg)](http://www.youtube.com/watch?v=6A5EpqqDOdk)</xmp>
+          <h5>Html</h5>
+          <xmp><iframe width="560" height="315" src="http://www.youtube.com/embed/6A5EpqqDOdk?rel=0" frameborder="0" allowfullscreen></iframe></xmp>
+    </blockquote>
+  </section>
+</ul>
+
+</body>
+
+</html>
